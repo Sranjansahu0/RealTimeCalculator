@@ -1,0 +1,8 @@
+#Dependicies for both appFrontend.py(Streamlit frontend)
+#and mainBackend.py (Fastapi, data processing backend)
+streamlit
+numpy
+uvicorn
+requests
+fastapi
+pydantic
