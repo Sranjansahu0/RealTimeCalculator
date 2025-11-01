@@ -1,5 +1,5 @@
 # Creating fastapi backend (main.py)
-
+import os
 from fastapi import FastAPI
 from pydantic import BaseModel
 import numpy as np
@@ -42,4 +42,11 @@ def calculate_multiply(data:dict):
     arr1 = np.array(data["a"])
     arr2 = np.array(data["b"])
     result = np.matmul(arr1,arr2)
+
     return {"Operation":"multiply","result":result.tolist()}
+
+if __name__ == "__main__":
+    import uvicorn
+    # Get port from environment variable or default to 8000
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("mainBackend:app", host="0.0.0.0", port=port, reload=True)
