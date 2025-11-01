@@ -4,7 +4,7 @@ import requests
 st.set_page_config(page_title="Realtime Calculator", layout="centered")
 st.title("Realtime Calculator App")
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://realtimecalculator.onrender.com"
 
 #initialize history in session state
 if "history" not in st.session_state:
@@ -84,4 +84,5 @@ if st.session_state.history:
         st.sidebar.write(f"{idx}. {item}")
 else:
     st.sidebar.info("No history yet")
+
 
