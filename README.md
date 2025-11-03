@@ -6,6 +6,6 @@ Wanna see the project - click below link
 <br>
 https://realtimecalculator-frontend.onrender.com
 <br>
-Note: Application deployed in 'Render'(free) so Sometimes it takes bit longer to boot and after boot also very fast opeartion takes sometime then after that it works normally.
+Note: Application deployed in 'Render'(free version), so Sometimes it takes bit longer to boot and after boot also, very first operation takes sometime then after that it works normally.
 
 Author - Sameer Ranjan Sahu
